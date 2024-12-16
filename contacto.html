@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a423973084.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section>
+        <div class="contenedor-titulo">
+            <h1>Pollería DIEGO'S</h1>
+        </div>
+    </section>
+    
+    <div class="contenedor-navbar">
+        <nav class="navbar">
+            <a href="./index.html" >Inicio</a>
+            <a href="./productos.html">Productos</a>
+            <a href="./contacto.html" class="active">Contacto</a>
+            <a href="./sobre-nosotros.html">Sobre Nosotros</a>
+        </nav>
+    </div>
+    <section class="container-mapa-form">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1195.1307711789825!2d-78.5324326739759!3d-5.639197768906879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b45317811f6caf%3A0xfa5124abd7b0252a!2sPoller%C3%ADa%20Diego&#39;s%20Chicken!5e0!3m2!1ses!2spe!4v1724850641994!5m2!1ses!2spe" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+        
+        <form action="#" class="contact-form2" id="form-calificacion">
+            <h2>Dejanos tus Comentarios</h2>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    
+    <footer >
+        <div class="footer-section">
+            <h3>Pollería Diego's</h3>
+            <p>¡Donde el sabor se encuentra con la tradición!</p>
+        </div>
+      
+        <div class="footer-section">
+            <h4>Horario de atención</h4>
+            <p>Lunes a domingo de 7:00 p.m. a 11:00 p.m.</p>
+            <h4>Contáctanos</h4>
+            <p>Dirección: Av. Psj. Alfonso Ugarte, Bagua</p>
+            <p>Teléfono: 987654321</p>
+            <p>Email: <a href="" class="texto-con-fondo-desvanecido-blanco">diego@chicken.com</a></p>
+        </div>
+        <div class="rrss">
+            <p><strong>Síguenos en:</strong></p>
+            <a href="https://facebook.com" target="_blank" class="social-link facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-link instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-link twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+    </footer>
+   
+     
+    <script>
+        
+    let btnSubmit2 = document.querySelector('#form-calificacion').addEventListener('submit',event=>{
+        event.preventDefault();
+        document.getElementById('nombre').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('mensaje').value = '';
+        alert('🎉Formulario Completado Exitosamente 👏🎉!!!');
+    });
+    </script>
+</body>
+</html>

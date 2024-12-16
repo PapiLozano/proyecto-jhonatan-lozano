@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, orange, orangered);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    gap: 30px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    width: 50%;
+    padding: 20px;
+    border-right: 2px solid #f0f0f0;
+}
+
+.cart-container {
+    width: 45%;
+    padding: 20px;
+}
+
+.cart-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.cart-container ul {
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.cart-item {
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container .total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn-cart {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg,red, orangered);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-cart:hover {
+    background: linear-gradient(135deg, orange, orangered);
+    transform: scale(1.03);
+    border-radius: 30px;
+}
+
+/* Formulario */
+.form-header h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.form-header p {
+    text-align: center;
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 600;
+}
+.item-carrito {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Espacio entre productos */
+}
+
+.imagen-producto {
+    width: 80px;  /* Ancho de la imagen */
+    height: 80px; /* Alto de la imagen */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+    margin-right: 15px; /* Espacio entre la imagen y los detalles */
+}
+
+.detalle-producto {
+    display: flex;
+    flex-direction: column;
+}
+
+.detalle-producto span {
+    margin-bottom: 5px; /* Espacio entre los elementos de los detalles */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #67b26f;
+    box-shadow: 0 0 8px rgba(103, 178, 111, 0.4);
+    outline: none;
+}
+
+.form-submit button {
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, red, orangered);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-submit button:hover {
+    background: linear-gradient(135deg, orangered, orange);
+}
+
+#btn-realizar-pago:disabled{
+    background: linear-gradient( to left,rgb(211, 209, 209),rgb(189, 185, 185));
+    color: gray;
+}
+#formulario-pago {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#formulario-pago h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#formulario-pago label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+#metodo-pago {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="%23e63946"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    box-sizing: border-box;
+    appearance: none; /* Quitar el estilo por defecto del navegador */
+    transition: border-color 0.3s ease;
+}
+
+#metodo-pago:focus {
+    border-color: #e63946;
+    outline: none;
+    box-shadow: 0 0 5px rgba(230, 57, 70, 0.5);
+}
+
+
+#datos-pago {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#datos-pago h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#datos-pago p {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#datos-pago input[type="text"], #datos-pago input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+#datos-pago input[type="text"]:focus, #datos-pago input[type="file"]:focus {
+    border-color: #e63946;
+    outline: none;
+    box-shadow: 0 0 5px rgba(230, 57, 70, 0.5);
+}
+
+#btn-confirmar-pago {
+    background:linear-gradient(to right,red,orangered);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+#btn-confirmar-pago:hover {
+    background:linear-gradient(to left,red,orange);
+    transform: scale(1.03);
+    border-radius: 30px;
+}
+#info-tarjeta {
+    background-color: #f9f9f9;
+    border: 1px solid #e63946;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#info-tarjeta h2 {
+    color: #e63946;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+#info-tarjeta label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#info-tarjeta input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+#info-tarjeta input:focus {
+    border-color: #e63946;
+    outline: none;
+}
+
+#btn-confirmar-pago-tarjeta {
+    background:linear-gradient(to right,red,orangered);
+    color: white;
+    padding: 12px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+#btn-confirmar-pago-tarjeta:hover {
+    background:linear-gradient(to left,red,orange);
+    transform: scale(1.03);
+    border-radius: 30px;
+}
+
+@media (max-width: 600px) {
+    #info-tarjeta {
+        padding: 15px;
+    }
+
+    #info-tarjeta input {
+        padding: 10px;
+    }
+
+    #btn-confirmar-pago-tarjeta {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .form-container, .cart-container {
+        width: 100%;
+        border-right: none;
+    }
+}

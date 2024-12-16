@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a423973084.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section>
+        <div class="contenedor-titulo">
+            <h1>Pollería DIEGO'S</h1>
+        </div>
+    </section>
+    
+    <div class="contenedor-navbar">
+        <nav class="navbar">
+            <a href="./index.html" >Inicio</a>
+            <a href="./productos.html" class="active">Productos</a>
+            <a href="./contacto.html">Contacto</a>
+            <a href="./sobre-nosotros.html">Sobre Nosotros</a>
+        </nav>
+        <button id="btn-carrito" onclick="desplegarCarrito()">🛒 Carrito</button>
+        <div id="carrito" class="carrito-derecha">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <button id="btn-pagar" style="display:none;">Pagar</button>
+        </div>
+    </div>
+    <section class="carrusel-container">
+        <a href="./platos.html">
+        <section class="carrusel">
+            <!-- Los productos se añadirán dinámicamente aquí -->
+        </section>
+        </a>
+    </section>
+    <a href="./platos.html"><button class="btn-ver-platos">Ver Platos</button></a>
+    <button class="carrusel-btn prev" ><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="carrusel-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+
+    <form action="#" class="contact-form" id="form-calificacion">
+        <h2>Subscríbete </h2>
+        <h4>¡Obtén nuestras Promociones!</h4>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        
+        
+        
+        <button type="submit">Enviar</button>
+    </form> 
+    <section class="datos-form" >
+        
+    </section> 
+
+    <footer >
+        <div class="footer-section">
+            <h3>Pollería Diego's</h3>
+            <p>¡Donde el sabor se encuentra con la tradición!</p>
+        </div>
+      
+        <div class="footer-section">
+            <h4>Horario de atención</h4>
+            <p>Lunes a domingo de 7:00 p.m. a 11:00 p.m.</p>
+            <h4>Contáctanos</h4>
+            <p>Dirección: Av. Psj. Alfonso Ugarte, Bagua</p>
+            <p>Teléfono: 987654321</p>
+            <p>Email: <a href="" class="texto-con-fondo-desvanecido-blanco">diego@chicken.com</a></p>
+        </div>
+        <div class="rrss">
+            <p><strong>Síguenos en:</strong></p>
+            <a href="https://facebook.com" target="_blank" class="social-link facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-link instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-link twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

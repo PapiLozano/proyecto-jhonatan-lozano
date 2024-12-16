@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a423973084.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="contenedor-titulo">
+            <h1>Pollería DIEGO'S</h1>
+        </div>
+    </section>
+    
+    <div class="contenedor-navbar">
+        <div  class="btn-volver"><a href="./productos.html"><i class="fa-solid fa-chevron-left"></i>volver</a></div>
+        <div class="titulo-platos"><p class="texto-con-fondo-desvanecido-blanco">Productos</p></div>
+        <button id="btn-carrito" onclick="desplegarCarrito()">🛒 Carrito</button>
+        <!-- <div id="carrito" class="carrito-derecha">
+            <h2>Carrito de Compras</h2>
+            
+        </div> -->
+        <div id="carrito" class="carrito-derecha">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <button id="btn-pagar" style="display:none;">Pagar</button>
+        </div>
+    </div>
+
+
+
+    <div class="container-productos">
+        <!-- Contenedor de productos  -->
+    </div>
+
+
+
+
+
+
+    <footer >
+        <div class="footer-section">
+            <h3>Pollería Diego's</h3>
+            <p>¡Donde el sabor se encuentra con la tradición!</p>
+        </div>
+      
+        <div class="footer-section">
+            <h4>Horario de atención</h4>
+            <p>Lunes a domingo de 7:00 p.m. a 11:00 p.m.</p>
+            <h4>Contáctanos</h4>
+            <p>Dirección: Av. Psj. Alfonso Ugarte, Bagua</p>
+            <p>Teléfono: 987654321</p>
+            <p>Email: <a href="" class="texto-con-fondo-desvanecido-blanco">diego@chicken.com</a></p>
+        </div>
+        <div class="rrss">
+            <p><strong>Síguenos en:</strong></p>
+            <a href="https://facebook.com" target="_blank" class="social-link facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-link instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-link twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+    </footer>
+
+    
+    <script src="productos.js"></script>
+</body>
+</html>
